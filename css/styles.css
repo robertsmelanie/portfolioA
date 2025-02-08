@@ -2968,6 +2968,10 @@ fieldset:disabled .btn {
   opacity: var(--bs-btn-disabled-opacity);
 }
 
+.btn-mbutton{
+    background-color: maroon;
+}
+
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #1a30bc;
@@ -8446,6 +8450,14 @@ fieldset:disabled .btn {
 .text-opacity-100 {
   --bs-text-opacity: 1;
 }
+.bg-mbutton {
+    background-color: maroon;
+
+}
+   
+    
+
+
 
 .bg-primary {
   --bs-bg-opacity: 1;
@@ -11353,7 +11365,9 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  /* background-color: rgba(26, 188, 156, 0.9); */
+  /* background-color: maroon; */
+  background-color: #c20a19;
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
