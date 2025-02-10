@@ -50,5 +50,29 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+    // add form section
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent page reload
+
+        // Get values from form fields
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
+        let responseMessage = document.getElementById("responseMessage");
+
+        // Simple validation
+        if (name === "" || email === "" || message === "") {
+            responseMessage.style.color = "red";
+            responseMessage.textContent = "All fields are required!";
+            return;
+        }
+
+        // Display success message
+        responseMessage.style.color = "green";
+        responseMessage.textContent = `Thank you, ${name}! Your message has been sent.`;
+
+        // Clear form fields
+        document.getElementById("contactForm").reset();
+    });
 
 });

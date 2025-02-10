@@ -532,6 +532,43 @@ progress {
   font-weight: 300;
   line-height: 1.2;
 }
+/* Add form section */
+.contact-form {
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+contactbutton {
+    background-color: maroon;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+  
+    cursor: pointer;
+    text-align: center;
+}
+button:hover {
+    background-color: #669BBC;
+}
+.success-message {
+    color: green;
+    font-size: 18px;
+    margin-top: 10px;
+}
 @media (min-width: 1200px) {
   .display-1 {
     font-size: 5rem;
@@ -11287,13 +11324,15 @@ html {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #1abc9c;
+    /* background: #1abc9c; */
+    background: #669BBC;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #1abc9c;
+    /* background: #1abc9c; */
+    background: #C20A19;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -11319,6 +11358,7 @@ html {
 .form-floating label {
   font-size: 1.5rem;
   color: #6c757d;
+  /* color: #C20A19; */
 }
 
 .masthead {
